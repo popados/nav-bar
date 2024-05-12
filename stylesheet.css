@@ -1,0 +1,190 @@
+
+
+
+* {
+margin: 0;
+padding: 0;
+list-style-type: none;
+} 
+
+body {
+color: white;
+width: 1440;
+height: 440vh;
+background-color: rgb(67,67,67);
+font-family: sans-serif;
+font-size: 16px;
+z-index: 2;
+}
+
+a {
+color: #ff7f00;
+/* text-decoration: none; */
+}
+
+nav {
+display: block;
+background: #222;
+/* overflow: hidden; */
+
+}
+
+
+.menu {
+display: flex;
+flex-direction: row;
+border: 1px solid red;
+align-items: center;
+justify-content: space-between;
+z-index: 1;
+/* background: #222; */
+}
+
+.toggle a {
+
+}
+
+.menu a {
+display: block;
+border: 1px solid red;
+padding: 15px 20px 15px 20px;
+}
+
+
+
+.menu li a {
+display: block;
+/* border: 1px solid red; */
+padding: 15px 20px 15px 20px;
+height: auto;
+
+}
+
+.item {
+
+}
+
+.icon a:hover{
+color: #ccc;
+
+
+}
+.item a:hover  {
+color: #ccc;
+background-color: gray;
+
+}
+
+.icon:nth-child(2) {
+margin-right: auto;
+}
+
+.icon a:hover {
+color: #08bfc5;
+background-color: gray;
+}
+
+.submenu {
+display: none;
+}
+
+
+/* .submenu:hover {
+display: block;
+} */
+
+.submenu-active {
+display: block;
+background-color: #111;
+/* float: right; */
+
+}
+
+.has-submenu {
+display: block;
+}
+
+.active {
+display: block;
+}
+
+.active .item {
+    display: block;
+    position: relative;
+}
+
+.active .submenu-active {
+display: inline;
+position: relative;
+
+}
+
+.submenu-open {
+display: block;
+background-color: #111;
+position: absolute;
+z-index: 1;
+/* float: right; */
+}
+
+.subitem {
+    display: flex;
+    /* top: 10%; */
+    /* flex-direction:  row; */
+}
+
+/* .submenu-active:hover .subitem {
+display:flex;
+background-color: #111;
+border-radius: 3px;
+} */
+
+
+/* .has-submenu:hover a {
+display: block;
+} */
+
+/* .has-submenu:hover .submenu {
+    display: block;
+    background-color: #111;
+    position: absolute;
+    z-index: 1;
+}  */
+
+
+
+@media all and (max-width: 860px) {
+
+
+    .active .item{
+    display: block;
+    }
+
+    .menu {
+    flex-direction: row;
+    }
+
+    .menu-items {
+
+    }
+
+    .submenu-active {
+    display: none;
+
+    }
+
+    .icon {
+
+    }
+
+    .item {
+    margin-right: auto;
+    display: none;
+
+    /* display: flex;
+    flex-direction: row; */
+
+    }
+}
+
+
